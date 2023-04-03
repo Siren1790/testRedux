@@ -4,8 +4,8 @@ import css from "./StatusFilter.module.css";
 import { useSelector, useDispatch } from "react-redux";
 // Імпортуємо об'єкт значень фільтра
 import { statusFilters } from "../../redux/constants";
-import { getStatusFilter } from "redux/selectors";
-import { setStatusFilter } from "redux/actions";
+import { getStatusFilter } from "redux/selectors"; 
+import { setStatusFilter } from "redux/filterSlice";
 
 export const StatusFilter = () => {
   // Отримуємо значення фільтра із стану Redux
